@@ -8,6 +8,41 @@
     <link rel="icon" href="media/img/favicon.ico" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+
+    <script>
+        (function () {
+            const CANONICAL = 'david-projects-list.vercel.app';
+            const CANONICAL_PROTO = 'https:';
+
+            const FREEDNS_SUFFIXES = ['moot.es', 'david.moot.es'];
+
+            const host = location.hostname;
+            const proto = location.protocol;
+
+            function canonicalUrl() {
+                return `${CANONICAL_PROTO}//${CANONICAL}${location.pathname}${location.search}${location.hash}`;
+            }
+
+            const isFreeDNS = FREEDNS_SUFFIXES.some(suf => host.endsWith(suf));
+
+            if (host === CANONICAL && proto === CANONICAL_PROTO) return;
+
+            if (isFreeDNS || proto !== CANONICAL_PROTO) {
+                const url = canonicalUrl();
+
+                try {
+                    if (window.top && window.top !== window.self) {
+                        window.top.location.replace(url);
+                        return;
+                    }
+                } catch (e) {
+                }
+
+                location.replace(url);
+            }
+        })();
+    </script>
+
 </head>
 
 <body>
@@ -21,7 +56,8 @@
                     <img class="ima" src="media/img/Homebrew-World.jpg" alt="Imagen del proyecto Homebrew World">
                 </div>
             </a>
-            <a class="github-link" href="https://github.com/GarciByte/Homebrew-World" target="_blank" aria-label="Ver código en GitHub de Homebrew World">
+            <a class="github-link" href="https://github.com/GarciByte/Homebrew-World" target="_blank"
+                aria-label="Ver código en GitHub de Homebrew World">
                 <i class="fab fa-github"></i>
                 <span>Ver en GitHub</span>
             </a>
@@ -34,7 +70,8 @@
                     <img class="ima" src="media/img/Pokedex.jpg" alt="Imagen del proyecto Pokédex de Kanto">
                 </div>
             </a>
-            <a class="github-link" href="https://github.com/GarciByte/Pokedex" target="_blank" aria-label="Ver código en GitHub de Pokédex de Kanto">
+            <a class="github-link" href="https://github.com/GarciByte/Pokedex" target="_blank"
+                aria-label="Ver código en GitHub de Pokédex de Kanto">
                 <i class="fab fa-github"></i>
                 <span>Ver en GitHub</span>
             </a>
@@ -47,7 +84,8 @@
                     <img class="ima" src="media/img/Rem.jpg" alt="Imagen del proyecto Rem es la mejor Waifu">
                 </div>
             </a>
-            <a class="github-link" href="https://github.com/GarciByte/Rem" target="_blank" aria-label="Ver código en GitHub de Rem es la mejor Waifu">
+            <a class="github-link" href="https://github.com/GarciByte/Rem" target="_blank"
+                aria-label="Ver código en GitHub de Rem es la mejor Waifu">
                 <i class="fab fa-github"></i>
                 <span>Ver en GitHub</span>
             </a>
@@ -75,7 +113,8 @@
                     <img class="ima" src="media/img/Innovacom.jpg" alt="Imagen del proyecto Innovacom">
                 </div>
             </a>
-            <a class="github-link" href="https://github.com/GarciByte/Ecommerce" target="_blank" aria-label="Ver código en GitHub de Innovacom">
+            <a class="github-link" href="https://github.com/GarciByte/Ecommerce" target="_blank"
+                aria-label="Ver código en GitHub de Innovacom">
                 <i class="fab fa-github"></i>
                 <span>Ver en GitHub</span>
             </a>
@@ -88,7 +127,8 @@
                     <img class="ima" src="media/img/Juego-web.webp" alt="Imagen del proyecto Juego de Memoria">
                 </div>
             </a>
-            <a class="github-link" href="https://github.com/GarciByte/Juego-web" target="_blank" aria-label="Ver código en GitHub del Juego de Memoria">
+            <a class="github-link" href="https://github.com/GarciByte/Juego-web" target="_blank"
+                aria-label="Ver código en GitHub del Juego de Memoria">
                 <i class="fab fa-github"></i>
                 <span>Ver en GitHub</span>
             </a>
@@ -101,7 +141,8 @@
                     <img class="ima" src="media/img/MagicHub.jpg" alt="Imagen del proyecto MagicHub">
                 </div>
             </a>
-            <a class="github-link" href="https://github.com/GarciByte/TFG_MagicApp" target="_blank" aria-label="Ver código en GitHub de MagicHub">
+            <a class="github-link" href="https://github.com/GarciByte/TFG_MagicApp" target="_blank"
+                aria-label="Ver código en GitHub de MagicHub">
                 <i class="fab fa-github"></i>
                 <span>Ver en GitHub</span>
             </a>
