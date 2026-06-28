@@ -1,8 +1,8 @@
-# 📁 Proyectos
+# Proyectos
 
 Página estática que reúne, en una sola vista, los proyectos personales que he ido construyendo: aplicaciones web, juegos y experimentos. Cada tarjeta muestra una captura, el dominio donde está desplegado (si lo está) y enlaces directos a la demo y/o al repositorio en GitHub.
 
-🔗 **Demo:** _https://garcibyte.vercel.app/_
+🌐 **Sitio web:** _https://garcibyte.vercel.app/_
 
 ## 🧱 Estructura
 
